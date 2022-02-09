@@ -20,7 +20,7 @@
 
 ### Write a `.proto` file
 
-1. Refer [highscore.proto](game-highscore/v1/highscore.proto) for the same
+1. Refer [highscore.proto](v1/highscore.proto) for the same
 
 ### Generate go code using `protoc`
 1. Update your `PATH` so that the `protoc` compiler can find the plugins:
@@ -31,4 +31,4 @@
 ```bash
     $ protoc --go_out=plugins=grpc:. *.proto
 ```
-1. Refer to [highscore.pb.go](game-highscore/v1/game/highscore.pb.go) for the generated go code
+1. Refer to [highscore.pb.go](v1/game/highscore.pb.go) for the generated go code
