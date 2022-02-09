@@ -1,8 +1,8 @@
-#Game APIS
+## Game APIS
 
-## How to generate APIs using the protobuff compiler
+### How to generate APIs using the protobuff compiler
 
-### Installation
+#### Installation
 
 1. Install protobuf using `brew` for mac:
 ```bash
@@ -18,11 +18,11 @@
     $ go get -u google.golang.org/grpc
 ```
 
-### Write a `.proto` file
+#### Write a `.proto` file
 
 1. Refer [highscore.proto](v1/highscore.proto) for the same
 
-### Generate go code using `protoc`
+#### Generate go code using `protoc`
 1. Update your `PATH` so that the `protoc` compiler can find the plugins:
 ```bash
     $ export PATH="$PATH:$(go env GOPATH)/bin"
