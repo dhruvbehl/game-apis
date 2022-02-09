@@ -1,0 +1,24 @@
+syntax = "proto3";
+package game.highscore.v1;
+
+option go_package = "./game";
+
+service Game {
+    rpc SetHighScore(SetHighScoreRequest) returns (SetHighScoreResponse);
+    rpc GetHighScore(GetHighScoreRequest) returns (GetHighScoreResponse);
+}
+
+message SetHighScoreRequest{
+    double high_score = 1; // number added to keep track of updates
+}
+
+message SetHighScoreResponse{
+    bool set = 1;
+}
+
+message GetHighScoreRequest{
+}
+
+message GetHighScoreResponse{
+    double high_score = 1;
+}
